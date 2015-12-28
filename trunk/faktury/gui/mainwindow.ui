@@ -1,0 +1,1077 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>764</width>
+    <height>628</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>ikonki/24x24/ikonka.png</normaloff>ikonki/24x24/ikonka.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="Faktury">
+       <attribute name="icon">
+        <iconset>
+         <normaloff>ikonki/16x16/faktury.png</normaloff>ikonki/16x16/faktury.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Faktury</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0" colspan="3">
+         <widget class="QGroupBox" name="szukaj_faktury_groupBox">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>160</height>
+           </size>
+          </property>
+          <property name="baseSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Szukaj faktury</string>
+          </property>
+          <widget class="QLabel" name="data_label">
+           <property name="geometry">
+            <rect>
+             <x>42</x>
+             <y>37</y>
+             <width>42</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Data:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="data_od_label">
+           <property name="geometry">
+            <rect>
+             <x>62</x>
+             <y>70</y>
+             <width>21</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Od</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="data_do_label">
+           <property name="geometry">
+            <rect>
+             <x>62</x>
+             <y>100</y>
+             <width>21</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Do</string>
+           </property>
+          </widget>
+          <widget class="QDateEdit" name="data_od_dateEdit">
+           <property name="geometry">
+            <rect>
+             <x>89</x>
+             <y>62</y>
+             <width>128</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="dateTime">
+            <datetime>
+             <hour>0</hour>
+             <minute>0</minute>
+             <second>0</second>
+             <year>2009</year>
+             <month>1</month>
+             <day>1</day>
+            </datetime>
+           </property>
+           <property name="displayFormat">
+            <string>dd/MM/yyyy</string>
+           </property>
+           <property name="calendarPopup">
+            <bool>true</bool>
+           </property>
+           <property name="timeSpec">
+            <enum>Qt::LocalTime</enum>
+           </property>
+           <property name="date">
+            <date>
+             <year>2009</year>
+             <month>1</month>
+             <day>1</day>
+            </date>
+           </property>
+          </widget>
+          <widget class="QDateEdit" name="data_do_dateEdit">
+           <property name="geometry">
+            <rect>
+             <x>89</x>
+             <y>96</y>
+             <width>128</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="dateTime">
+            <datetime>
+             <hour>0</hour>
+             <minute>0</minute>
+             <second>0</second>
+             <year>2009</year>
+             <month>1</month>
+             <day>1</day>
+            </datetime>
+           </property>
+           <property name="displayFormat">
+            <string>dd/MM/yyyy</string>
+           </property>
+           <property name="calendarPopup">
+            <bool>true</bool>
+           </property>
+           <property name="timeSpec">
+            <enum>Qt::LocalTime</enum>
+           </property>
+           <property name="date">
+            <date>
+             <year>2009</year>
+             <month>1</month>
+             <day>1</day>
+            </date>
+           </property>
+          </widget>
+          <widget class="QLabel" name="kwota_label">
+           <property name="geometry">
+            <rect>
+             <x>239</x>
+             <y>37</y>
+             <width>52</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Kwota:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="kwota_do_label">
+           <property name="geometry">
+            <rect>
+             <x>260</x>
+             <y>100</y>
+             <width>21</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Do</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="kwota_od_label">
+           <property name="geometry">
+            <rect>
+             <x>260</x>
+             <y>70</y>
+             <width>20</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Od</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="kwota_od_lineEdit">
+           <property name="geometry">
+            <rect>
+             <x>286</x>
+             <y>62</y>
+             <width>121</width>
+             <height>26</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="kwota_do_lineEdit">
+           <property name="geometry">
+            <rect>
+             <x>286</x>
+             <y>96</y>
+             <width>121</width>
+             <height>26</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="szukaj_fakture_pushButton">
+           <property name="geometry">
+            <rect>
+             <x>620</x>
+             <y>130</y>
+             <width>100</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Szukaj</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="klient_szukaj_faktury_label">
+           <property name="geometry">
+            <rect>
+             <x>430</x>
+             <y>40</y>
+             <width>51</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Klient:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label">
+           <property name="geometry">
+            <rect>
+             <x>450</x>
+             <y>70</y>
+             <width>73</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Nazwa</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_2">
+           <property name="geometry">
+            <rect>
+             <x>450</x>
+             <y>100</y>
+             <width>73</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>NIP</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="nazwa_klienta_szukaj_fakturylineEdit">
+           <property name="geometry">
+            <rect>
+             <x>510</x>
+             <y>60</y>
+             <width>121</width>
+             <height>26</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="nip_szukaj_klienta_lineEdit">
+           <property name="geometry">
+            <rect>
+             <x>510</x>
+             <y>90</y>
+             <width>121</width>
+             <height>26</height>
+            </rect>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="3">
+         <widget class="QTableView" name="faktury_tableView"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="dodaj_fakture_pushButton">
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Dodaj</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>ikonki/22x22/add.png</normaloff>ikonki/22x22/add.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>22</width>
+            <height>22</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QPushButton" name="aktualizuj_fakture_pushButton">
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Aktualizuj</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>ikonki/22x22/aktualizuj.png</normaloff>ikonki/22x22/aktualizuj.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>22</width>
+            <height>22</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QPushButton" name="usun_fakture_pushButton">
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Usuń</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>ikonki/22x22/usun.png</normaloff>ikonki/22x22/usun.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>22</width>
+            <height>22</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Klienci">
+       <attribute name="icon">
+        <iconset>
+         <normaloff>ikonki/16x16/klienci.png</normaloff>ikonki/16x16/klienci.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Klienci</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="1" column="0" colspan="3">
+         <widget class="QTableView" name="klienci_tableView"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="dodaj_klienta_pushButton">
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Dodaj</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>ikonki/22x22/add.png</normaloff>ikonki/22x22/add.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>22</width>
+            <height>22</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QPushButton" name="aktualizuj_klienta_pushButton">
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Aktualizuj</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>ikonki/22x22/aktualizuj.png</normaloff>ikonki/22x22/aktualizuj.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>22</width>
+            <height>22</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QPushButton" name="usun_klienta_pushButton">
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Usuń</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>ikonki/22x22/usun.png</normaloff>ikonki/22x22/usun.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>22</width>
+            <height>22</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="3">
+         <widget class="QGroupBox" name="szukaj_klienta_groupBox">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>120</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Szukaj klienta</string>
+          </property>
+          <widget class="QLabel" name="nazwa_klienta_label">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>40</y>
+             <width>51</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Nazwa</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="nazwa_klienta_lineEdit">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>30</y>
+             <width>181</width>
+             <height>27</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="nip_lineEdit">
+           <property name="geometry">
+            <rect>
+             <x>380</x>
+             <y>30</y>
+             <width>181</width>
+             <height>27</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="regon_lineEdit">
+           <property name="geometry">
+            <rect>
+             <x>380</x>
+             <y>60</y>
+             <width>181</width>
+             <height>27</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="nr_konta_lineEdit">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>60</y>
+             <width>181</width>
+             <height>27</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="nip_label">
+           <property name="geometry">
+            <rect>
+             <x>330</x>
+             <y>40</y>
+             <width>51</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>NIP</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="regon_label">
+           <property name="geometry">
+            <rect>
+             <x>330</x>
+             <y>70</y>
+             <width>51</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Regon</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="nr_konta_label">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>70</y>
+             <width>71</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Nr konta</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="szukaj_klienta_pushButton">
+           <property name="geometry">
+            <rect>
+             <x>620</x>
+             <y>90</y>
+             <width>100</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Szukaj</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Produkty">
+       <attribute name="icon">
+        <iconset>
+         <normaloff>ikonki/16x16/produkty.png</normaloff>ikonki/16x16/produkty.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Produkty</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0" colspan="3">
+         <widget class="QGroupBox" name="szukaj_produktu_groupBox">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>131</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Szukaj produktu</string>
+          </property>
+          <widget class="QLabel" name="nazwa_label">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>40</y>
+             <width>73</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Nazwa</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="cena_label">
+           <property name="geometry">
+            <rect>
+             <x>330</x>
+             <y>40</y>
+             <width>73</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Cena:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="cena_od_label">
+           <property name="geometry">
+            <rect>
+             <x>360</x>
+             <y>70</y>
+             <width>31</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Od</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="cena_do_label">
+           <property name="geometry">
+            <rect>
+             <x>510</x>
+             <y>70</y>
+             <width>31</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Do</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="nazwa_produktu_lineEdit">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>30</y>
+             <width>191</width>
+             <height>27</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="cena_do_lineEdit">
+           <property name="geometry">
+            <rect>
+             <x>540</x>
+             <y>60</y>
+             <width>100</width>
+             <height>27</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>27</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>27</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="cena_od_lineEdit">
+           <property name="geometry">
+            <rect>
+             <x>390</x>
+             <y>60</y>
+             <width>100</width>
+             <height>27</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>27</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>27</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="szukaj_produktu_pushButton">
+           <property name="geometry">
+            <rect>
+             <x>610</x>
+             <y>100</y>
+             <width>100</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Szukaj</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="stan_magazynu_label">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>70</y>
+             <width>131</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Stan magazynu:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="stan_magazynu_odlabel">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>100</y>
+             <width>73</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Od</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="stan_magazynu_do_label">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>100</y>
+             <width>21</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Do</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="stan_magazynu_od_lineEdit">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>90</y>
+             <width>100</width>
+             <height>27</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>27</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>27</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="stan_magazynu_do_lineEdit">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>90</y>
+             <width>100</width>
+             <height>27</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>27</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>27</height>
+            </size>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="3">
+         <widget class="QTableView" name="produkty_tab_view"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="dodaj_produkt_pushButton">
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Dodaj</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>ikonki/22x22/add.png</normaloff>ikonki/22x22/add.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>22</width>
+            <height>22</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QPushButton" name="aktualizuj_produkt_pushButton">
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Aktualizuj</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>ikonki/22x22/aktualizuj.png</normaloff>ikonki/22x22/aktualizuj.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>22</width>
+            <height>22</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QPushButton" name="usun_produktu_pushButton">
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Usuń</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>ikonki/22x22/usun.png</normaloff>ikonki/22x22/usun.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>22</width>
+            <height>22</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>764</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Plik">
+    <property name="title">
+     <string>&amp;Plik</string>
+    </property>
+    <addaction name="action_Dane_firmy"/>
+    <addaction name="action_Koniec"/>
+   </widget>
+   <widget class="QMenu" name="menuFaktury">
+    <property name="title">
+     <string>Faktury</string>
+    </property>
+    <addaction name="actionDodaj_faktur"/>
+    <addaction name="actionUsu_faktur"/>
+    <addaction name="actionAktualizuj_faktur"/>
+   </widget>
+   <widget class="QMenu" name="menuKlienci">
+    <property name="title">
+     <string>Klienci</string>
+    </property>
+    <addaction name="actionDodaj_klienta"/>
+    <addaction name="actionUsu_klienta"/>
+    <addaction name="actionAktualizuj_klienta"/>
+   </widget>
+   <widget class="QMenu" name="menuTowary">
+    <property name="title">
+     <string>Produkty</string>
+    </property>
+    <addaction name="actionDodaj_produkt"/>
+    <addaction name="actionUsu_produkt"/>
+    <addaction name="actionAktualizuj_produkt"/>
+   </widget>
+   <addaction name="menu_Plik"/>
+   <addaction name="menuFaktury"/>
+   <addaction name="menuKlienci"/>
+   <addaction name="menuTowary"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Koniec">
+   <property name="text">
+    <string>&amp;Koniec</string>
+   </property>
+  </action>
+  <action name="action_Dane_firmy">
+   <property name="text">
+    <string>&amp;Dane firmy</string>
+   </property>
+  </action>
+  <action name="actionDodaj_faktur">
+   <property name="text">
+    <string>Dodaj fakturę</string>
+   </property>
+  </action>
+  <action name="actionUsu_faktur">
+   <property name="text">
+    <string>Usuń fakturę</string>
+   </property>
+  </action>
+  <action name="actionAktualizuj_faktur">
+   <property name="text">
+    <string>Aktualizuj fakturę</string>
+   </property>
+  </action>
+  <action name="actionDodaj_klienta">
+   <property name="text">
+    <string>Dodaj klienta</string>
+   </property>
+  </action>
+  <action name="actionUsu_klienta">
+   <property name="text">
+    <string>Usuń klienta</string>
+   </property>
+  </action>
+  <action name="actionAktualizuj_klienta">
+   <property name="text">
+    <string>Aktualizuj klienta</string>
+   </property>
+  </action>
+  <action name="actionDodaj_produkt">
+   <property name="text">
+    <string>Dodaj produkt</string>
+   </property>
+  </action>
+  <action name="actionUsu_produkt">
+   <property name="text">
+    <string>Usuń produkt</string>
+   </property>
+  </action>
+  <action name="actionAktualizuj_produkt">
+   <property name="text">
+    <string>Aktualizuj produkt</string>
+   </property>
+  </action>
+  <action name="actionDodaj_usluge">
+   <property name="text">
+    <string>Dodaj usługę</string>
+   </property>
+  </action>
+  <action name="actionUsu_usluge">
+   <property name="text">
+    <string>Usuń usługę</string>
+   </property>
+  </action>
+  <action name="actionAktualizuj_usluge">
+   <property name="text">
+    <string>Aktualizuj usługę</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>data_od_dateEdit</tabstop>
+  <tabstop>data_do_dateEdit</tabstop>
+  <tabstop>kwota_od_lineEdit</tabstop>
+  <tabstop>kwota_do_lineEdit</tabstop>
+  <tabstop>nazwa_klienta_szukaj_fakturylineEdit</tabstop>
+  <tabstop>nip_szukaj_klienta_lineEdit</tabstop>
+  <tabstop>szukaj_fakture_pushButton</tabstop>
+  <tabstop>faktury_tableView</tabstop>
+  <tabstop>dodaj_fakture_pushButton</tabstop>
+  <tabstop>aktualizuj_fakture_pushButton</tabstop>
+  <tabstop>usun_fakture_pushButton</tabstop>
+  <tabstop>nazwa_klienta_lineEdit</tabstop>
+  <tabstop>nr_konta_lineEdit</tabstop>
+  <tabstop>nip_lineEdit</tabstop>
+  <tabstop>regon_lineEdit</tabstop>
+  <tabstop>szukaj_klienta_pushButton</tabstop>
+  <tabstop>klienci_tableView</tabstop>
+  <tabstop>dodaj_klienta_pushButton</tabstop>
+  <tabstop>aktualizuj_klienta_pushButton</tabstop>
+  <tabstop>usun_klienta_pushButton</tabstop>
+  <tabstop>nazwa_produktu_lineEdit</tabstop>
+  <tabstop>cena_od_lineEdit</tabstop>
+  <tabstop>cena_do_lineEdit</tabstop>
+  <tabstop>stan_magazynu_od_lineEdit</tabstop>
+  <tabstop>stan_magazynu_do_lineEdit</tabstop>
+  <tabstop>szukaj_produktu_pushButton</tabstop>
+  <tabstop>produkty_tab_view</tabstop>
+  <tabstop>dodaj_produkt_pushButton</tabstop>
+  <tabstop>aktualizuj_produkt_pushButton</tabstop>
+  <tabstop>usun_produktu_pushButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

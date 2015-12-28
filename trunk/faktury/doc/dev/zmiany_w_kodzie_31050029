@@ -1,0 +1,4 @@
+1. Naprawione dodawanie klienta - jak nie mial podanego nipu lub regonu program nie dodawal do bazy
+2. Naprawione wyswietlanie danych w mainwindow - teraz wyswietla imie, nazwisko i nazwe firmy w osobnych polach nie jednym
+3. Naprawione wyswietlanie danych w oknie [Aktualizacja klienta] - dane wyswietlane w odpowiednich polach ;)
+4. Poprawione wyszukiwanie klientow ( zamiast WHERE zmienna=wartosc jest WHERE zmienna LIKE wartosc ) dzieki temu latwiejsze wyszukiwanie po fragmentach nazw.

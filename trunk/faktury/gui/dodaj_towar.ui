@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dodaj_Towar</class>
+ <widget class="QDialog" name="Dodaj_Towar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>620</width>
+    <height>180</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>620</width>
+    <height>180</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>620</width>
+    <height>180</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dodaj produkt</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>ikonki/16x16/produkty.png</normaloff>ikonki/16x16/produkty.png</iconset>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>140</y>
+     <width>189</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Nazwa_Produktu_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>10</y>
+     <width>471</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Nazwa_Produktu_label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>20</y>
+     <width>131</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Nazwa Produktu</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Cena_netto_label">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>80</y>
+     <width>91</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cena netto</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Cena_Netto_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>70</y>
+     <width>110</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Typ_label">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>50</y>
+     <width>31</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Typ</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="Typ_comboBox">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>40</y>
+     <width>110</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Towar</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Usługa</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="VAT_comboBox">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>70</y>
+     <width>110</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>zw</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0%</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>3%</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>7%</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>22%</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="VAT_label">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>80</y>
+     <width>31</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>VAT</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Producent_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>100</y>
+     <width>471</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Producent_label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>110</y>
+     <width>91</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Producent</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ilosc_label">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>50</y>
+     <width>51</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ilość</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ilosc_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>40</y>
+     <width>110</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>Nazwa_Produktu_lineEdit</tabstop>
+  <tabstop>Typ_comboBox</tabstop>
+  <tabstop>Cena_Netto_lineEdit</tabstop>
+  <tabstop>ilosc_lineEdit</tabstop>
+  <tabstop>VAT_comboBox</tabstop>
+  <tabstop>Producent_lineEdit</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

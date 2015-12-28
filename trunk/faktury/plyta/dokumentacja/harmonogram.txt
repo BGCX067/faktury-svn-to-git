@@ -1,0 +1,38 @@
+﻿***** 0.3	milestone 1	DEADLINE: 7 czewiec 2009 *****
+// edycja klientów i produktów, wystawianie faktury
+# (52aqir): manual dla użytkownika - jednak nie będzie
+
+***** 0.2	develop		DEADLINE: 3 czerwiec 2009 *****
+// poprawki błędów, uzupełnianie dokumentacji
+	
+
+
+***** 0.1.5	develop		DEADLINE: 31 maj 2009 *****
+// dodawanie klientów i produktów, tworzenie faktury WZ
+	# (EL):		dodawanie klientów	//Upgraded by 52aqir
+	# (EL):		aktualizacja klientów
+	# (EL):		wyszukiwanie klientów 	//Upgraded by 52aqir
+	# (52aqir):	gotowe formatki
+	# (dext):	Dodanie madelu dla klientów i produktów
+
+
+***** 0.1	develop		DEADLINE: 24 maj 2009 *****
+// program ma się uruchomić
+	# (dext):	zbudować bazę danych (DDL)
+	# (dext):	zaimplementować podstawowe funkcjonalności w modelu
+	# (EL):	wyświetlić okno główne programu
+#[tylko rzeczy konieczne do zrozumienia] (52aqir):	manual: dodawanie klienta i towaru, opis interfejsu ( na potrzeby dev )
+
+
+***** 0.0	designing	DEADLINE: 17 maj 2009 *****
+// projektowanie
+	# (dext):		przygotować platformę: forum i GoogleCode
+	# (52aqir):	zaprojektować formatki
+	# (52aqir):	wstepny usecase
+	# (dext): 		poprawić usecasy
+	# (dext):		diagram stanów życia faktury
+	# (dext):		poglądowy diagram klas
+	# (EL):		diagramy aktywności
+	# (dext):		harmonogram wydań
+	# (dext):		szablon dokumentacji
+	# (dext):		zasady dokumentowania kodu

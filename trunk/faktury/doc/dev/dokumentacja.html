@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" >
+
+<head>
+
+<title>Dokumentacja projektu faktury</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="pl" />
+<meta name="Description" content="Dokumentacja projektu Faktury" />
+<meta name="ROBOTS" content="ALL FOLLOW" />
+
+<meta name="Keywords" content="dokumentacja, faktury" />
+
+<meta name="Author" content="Daniel Krysiak" />
+<meta name="Authoring-tool" content="Kate" />
+
+<link rel="stylesheet" href="./style.css" type="text/css" />
+
+</head>
+<body>
+
+<h1>Dokumentacja projektu faktury</h1>
+
+<ol>
+	<li>
+		<h2>Licencja</h2>
+		<p>Copyright (C) 2009 WSZiB w Krakowie</p>
+
+		<p>This document is free software: you can redistribute it and/or modify
+		it under the terms of the GNU General Public License as published by
+		the Free Software Foundation, either version 3 of the License, or
+		(at your option) any later version.</p>
+
+		<p>This document is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+		GNU General Public License for more details.</p>
+
+		<p>You should have received a copy of the GNU General Public License
+		along with this program.  If not, see http://www.gnu.org/licenses/.</p>
+	</li>
+	<li>
+		<h2>Autorzy</h2>
+		<ul>
+			<li><p><strong>Daniel Krysiak (dext)</strong> - Model i baza danych</p></li>
+			<li><p><strong>Przemysław Szpunar (EliamLance/EL)</strong> - Kontrolery</p></li>
+			<li><p><strong>Grzegorz Śmierzchalski (52aqir)</strong> - Widoki, interfejs użytkownika/grafika, instrukcja obsługi</p></li>
+		</ul>
+	</li>
+	<li>
+		<h2>Definicje wymagań</h2>
+		<ol>
+			<li><h3>Wprowadzenie</h3>
+				<p>Niniejszy rozdział ma na celu zaprezentowanie wymagań dotyczących oprogramowania, czyli
+				opisuje funkcjonalność budowanego systemu i warunki jakie on musi spełnić. Dokument napisany
+				jest z myślą o potencjalnych użytkownikach, programistach i projektantach, osobach zajmujących
+				się testowaniem oprogramowania i autorach dokumentacji użytkowej.</p>
+			</li>
+			<li>
+				<h3>Zakres produktu</h3>
+				<p>Usprawnienie procesu wystawiania i przechowywania historii faktur</p>
+			</li>
+			<li>
+				<h3>Definicja, akronimy, skróty</h3>
+				<dl>
+					<dt>Faktura</dt>
+					<dd>Pod tym pojęciem kryją się 3 rodzaje dokumentów: faktura-WZ, faktura i korekta.</dd>
+
+					<dt>Faktura-WZ</dt>
+					<dd>Faktura robocza</dd>
+
+					<dt>Faktura wystawiona</dt>
+					<dd>Niezmienialny dokument skarbowy</dd>
+
+					<dt>Korekta</dt>
+					<dd>Faktura z opisem zmian w stosunku do faktury/korekty wcześniej wystawionej z błędem.</dd>
+
+					<dt>Produkt</dt>
+					<dd>Ogólne pojęcie dla towarów fizycznych jak i usług</dd>
+
+					<dt>Klient</dt>
+					<dd>Odbiorca faktury</dd>
+
+					<dt>NIP</dt>
+					<dd>Numer Identyfikacji Podatkowej</dd>
+				</dl>
+			</li>
+			<li>
+				<h3>Ogólny opis produktu</h3>
+				<p>Oprogramowanie ma zapewnić łatwe i szybkie w obsłudze generowanie nowych faktur na podstawie 
+				bazy klientów i produktów. Powinno działać na większości systemów komputerowych, oraz
+				nie wymagać zewnętrznej bazy danych.</p>
+			</li>
+			<li>
+				<h3>Wymagania funkcjonalne</h3>
+				<ol>
+					<li><h4>Zarządzanie klientami</h4>
+						<ul>
+							<li><p>Nowy klient powinien mieć zdefiniowane: podmiot, adres, oraz opcjonalnie: NIP, REGON, numer konta i telefon.</p></li>
+							<li><p>Edytowanie i usuwanie klienta może być fizycznie odwzorowane w bazie
+							tylko jeżeli nie widnieje on na żadnej wystawionej fakturze.</p></li>
+							<li><p>Edytowanie klienta, który widnieje na wystawionej fakturze ma w praktyce
+							polegać na utworzeniu nowego klienta na podstawie wybranego do edycji.</p></li>
+							<li><p>Klienci powinni być wyszukiwani za pomocą prostego filtru, w zakresie
+							nazwy podmiotu, albo NIP-u.</p></li>
+						</ul>
+					</li>
+					<li><h4>Zarządzanie produktami</h4>
+						<ul>
+							<li><p>Nowy produkt powinien mieć zdefiniowane: nazwę, ilość w magazynie, jednostkę,
+							stawkę VAT, cenę netto za jednostkę.</p></li>
+							<li><p>Edytowanie i usuwanie produktu może być fizycznie odwzorowane w bazie
+							tylko jeżeli nie widnieje on na żadnej wystawionej fakturze.</p></li>
+							<li><p>Edytowanie produktu, który widnieje na wystawionej fakturze ma w praktyce
+							polegać na utworzeniu nowego towaru na podstawie wybranego do edycji.</p></li>
+							<li><p>Produkty powinny być wyszukiwane za pomocą prostego filtru, w zakresie
+							nazwy towaru.</p></li>
+						</ul>
+					</li>
+					<li><h4>Zarządzanie fakturami</h4>
+						<ul>
+							<li><p>Faktura musi mieć zdefiniowane: co najmniej jeden produkt, jednego klienta, formę oraz datę zapłaty.</p></li>
+							<li><p>Fakturę WZ można w pełni edytować, a nawet usunąć.</p></li>
+							<li><p>Po wystawieniu faktury jej zawartość nie może ulec zmianie</p></li>
+							<li><p>Po wy-edytowaniu produktu albo klienta, użytkownik powinien zostać poinformowany
+							o miejscach na wystawionych fakturach, gdzie takie elementy występowały, oraz
+							pozwolić na wygenerowanie automatycznych korekt.</p></li>
+							<li><p>System powinien automatycznie wyliczać cenę brutto, a w podsumowaniu całkowity
+							procentowy udział podatku VAT w wartości zamówienia.</p></li>
+							<li><p>Faktury powinny być wyszukiwane za pomocą filtru w zakresie: daty wystawienia,
+							klienta i towaru.</p></li>
+						</ul>
+					</li>
+					<li><h4>Posiadający interfejs graficzny</h4>
+						<ul>
+							<li><p>Interfejs graficzny powinien zostać zrealizowany w bibliotece QT.</p></li>
+							<li><p>Powinien umożliwiać komponowanie kilku faktur na raz w kartach.</p></li>
+							<li><p>Podczas komponowania użytkownik powinien mieć cały czas łatwy dostęp do
+							listy klientów i towarów</p></li>
+						</ul>
+					</li>
+					<li><h4>Jednostanowiskowy i jednoużytkownikowy</h4>
+						<ul>
+							<li><p>System ma posiadać jeden, z góry zdefiniowany podmiot wystawiający fakturę.</p></li>
+							<li><p>Nie powinien korzystać z zasobów zdalnych.</p></li>
+						</ul>
+					</li>
+				</ol>
+			</li>
+			<li>
+				<h3>Wymagania niefunkcjonalne</h3>
+				<ol>
+					<li><h4>Na wolnej licencji</h4>
+						<ul>
+							<li><p>Cały produkt z dokumentacją powinien zostać wydany na licencji GPLv3.</p></li>
+						</ul>
+					</li>
+					<li><h4>Wieloplatformowy</h4>
+						<ul>
+							<li><p>Powinno się używać przenośnych, międzyplatformowych bibliotek.</p></li>
+							<li><p>System powinien być przetestowany w systemach GNU/Linux, oraz Windows.</p></li>
+							<li><p>System powinien kompilować się na platformach x86, oraz x64.</p></li>
+						</ul>
+					</li>
+					<li><h4>Pracuje na lokalnej bazie danych</h4>
+						<ul>
+							<li><p>Oprogramowanie powinno wykorzystywać bazę SQLite.</p></li>
+						</ul>
+					</li>
+				</ol>
+			</li>
+		</ol>
+	</li>
+	<li>
+		<h2>Analiza ryzyka</h2>
+	</li>
+	<li>
+		<h2>Plan wydawniczy</h2>
+		<p>Szczegółowy plan wydań jest dostępny w repozytorium projektu.</p>
+		<p>Przyjmuje się następujące znaczenia dla numerów wersji:
+			<ul>
+				<li><p><strong>nieparzyste</strong> - wydanie wprowadzające nową funkcjonalność, kierowane dla testerów</p></li>
+				<li><p><strong>parzyste</strong> - wydanie wprowadzające jedynie poprawki i usprawnienia, kierowane do klienta</p></li>
+			</ul>
+		</p>
+	</li>
+</ol>
+
+
+
+</body>
+</html>

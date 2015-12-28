@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>825</width>
+    <height>689</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Wystaw fakturę</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>ikonki/16x16/faktury.png</normaloff>ikonki/16x16/faktury.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="dane_faktury_groupBox">
+     <property name="minimumSize">
+      <size>
+       <width>311</width>
+       <height>211</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>311</width>
+       <height>211</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>Dane faktury</string>
+     </property>
+     <widget class="QComboBox" name="platnosc_comboBox">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>140</y>
+        <width>131</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Przelew</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Gotówka</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLineEdit" name="nr_dokumentu_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>20</y>
+        <width>131</width>
+        <height>27</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="data_sprzedazy_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>59</y>
+        <width>121</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Data sprzedaży</string>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="data_wystawienia_dateEdit">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>80</y>
+        <width>131</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="dateTime">
+       <datetime>
+        <hour>0</hour>
+        <minute>0</minute>
+        <second>0</second>
+        <year>2009</year>
+        <month>1</month>
+        <day>1</day>
+       </datetime>
+      </property>
+      <property name="displayFormat">
+       <string>dd/MM/yyyy</string>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+      <property name="timeSpec">
+       <enum>Qt::LocalTime</enum>
+      </property>
+      <property name="date">
+       <date>
+        <year>2009</year>
+        <month>1</month>
+        <day>1</day>
+       </date>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="data_sprzedazy_dateEdit">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>50</y>
+        <width>131</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="dateTime">
+       <datetime>
+        <hour>0</hour>
+        <minute>0</minute>
+        <second>0</second>
+        <year>2009</year>
+        <month>1</month>
+        <day>1</day>
+       </datetime>
+      </property>
+      <property name="displayFormat">
+       <string>dd/MM/yyyy</string>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+      <property name="timeSpec">
+       <enum>Qt::LocalTime</enum>
+      </property>
+      <property name="date">
+       <date>
+        <year>2009</year>
+        <month>1</month>
+        <day>1</day>
+       </date>
+      </property>
+     </widget>
+     <widget class="QLabel" name="platnosc_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>150</y>
+        <width>73</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Płatność</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="nr_dokumentu_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>121</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nr dokumentu</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="data_wystawienia_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>151</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Data wystawienia</string>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="termin_platnosci_dateEdit">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>110</y>
+        <width>131</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="dateTime">
+       <datetime>
+        <hour>0</hour>
+        <minute>0</minute>
+        <second>0</second>
+        <year>2009</year>
+        <month>1</month>
+        <day>1</day>
+       </datetime>
+      </property>
+      <property name="displayFormat">
+       <string>dd/MM/yyyy</string>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+      <property name="timeSpec">
+       <enum>Qt::LocalTime</enum>
+      </property>
+      <property name="date">
+       <date>
+        <year>2009</year>
+        <month>1</month>
+        <day>1</day>
+       </date>
+      </property>
+     </widget>
+     <widget class="QLabel" name="termin_platnosci_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>131</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Termin płatności</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QGroupBox" name="dane_kontrahenta_groupBox">
+     <property name="minimumSize">
+      <size>
+       <width>490</width>
+       <height>211</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>490</width>
+       <height>211</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>Dane kontrahenta</string>
+     </property>
+     <widget class="QLabel" name="imie_label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>73</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Imię</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="imie_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>211</width>
+        <height>27</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="nazwisko_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>50</y>
+        <width>211</width>
+        <height>27</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="nazwisko_label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>81</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nazwisko</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="nazwa_firmy_label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>121</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nazwa firmy</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="nazwa_firmy_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>80</y>
+        <width>211</width>
+        <height>27</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="nip_label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>73</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>NIP</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="adres_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>110</y>
+        <width>211</width>
+        <height>27</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="regon_label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>180</y>
+        <width>73</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Regon</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="nip_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>140</y>
+        <width>211</width>
+        <height>27</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="adres_label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>73</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Adres</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="regon_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>170</y>
+        <width>211</width>
+        <height>27</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pobierz_z_listy_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>20</y>
+        <width>151</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Pobierz z listy</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="dodaj_klienta_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>50</y>
+        <width>151</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Dodaj klienta</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QGroupBox" name="produkty_groupBox">
+     <property name="title">
+      <string>Produkty</string>
+     </property>
+     <widget class="QTableView" name="produkty_tableView">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>811</width>
+        <height>321</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="dodaj_produkt_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>340</y>
+        <width>109</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Dodaj</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="zmien_produkt_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>340</y>
+        <width>109</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Zmień</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="usun_produkt_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>340</y>
+        <width>109</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Usuń</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="wartosc_brutto_label">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>350</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Wartość brutto</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="wartosc_brutto_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>340</y>
+        <width>171</width>
+        <height>27</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>nr_dokumentu_lineEdit</tabstop>
+  <tabstop>data_sprzedazy_dateEdit</tabstop>
+  <tabstop>data_wystawienia_dateEdit</tabstop>
+  <tabstop>termin_platnosci_dateEdit</tabstop>
+  <tabstop>platnosc_comboBox</tabstop>
+  <tabstop>imie_lineEdit</tabstop>
+  <tabstop>nazwisko_lineEdit</tabstop>
+  <tabstop>nazwa_firmy_lineEdit</tabstop>
+  <tabstop>adres_lineEdit</tabstop>
+  <tabstop>nip_lineEdit</tabstop>
+  <tabstop>regon_lineEdit</tabstop>
+  <tabstop>pobierz_z_listy_pushButton</tabstop>
+  <tabstop>dodaj_klienta_pushButton</tabstop>
+  <tabstop>produkty_tableView</tabstop>
+  <tabstop>dodaj_produkt_pushButton</tabstop>
+  <tabstop>zmien_produkt_pushButton</tabstop>
+  <tabstop>usun_produkt_pushButton</tabstop>
+  <tabstop>wartosc_brutto_lineEdit</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

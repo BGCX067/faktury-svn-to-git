@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>764</width>
+    <height>628</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="Faktury">
+       <attribute name="title">
+        <string>Faktury</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0" colspan="3">
+         <widget class="QGroupBox" name="groupBox">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>160</height>
+           </size>
+          </property>
+          <property name="baseSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Szukaj faktury</string>
+          </property>
+          <widget class="QLabel" name="data_lab">
+           <property name="geometry">
+            <rect>
+             <x>42</x>
+             <y>37</y>
+             <width>42</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Data:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="data_od_lab">
+           <property name="geometry">
+            <rect>
+             <x>42</x>
+             <y>62</y>
+             <width>21</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Od</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="data_do_lab">
+           <property name="geometry">
+            <rect>
+             <x>42</x>
+             <y>96</y>
+             <width>21</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Do</string>
+           </property>
+          </widget>
+          <widget class="QDateEdit" name="data_od">
+           <property name="geometry">
+            <rect>
+             <x>69</x>
+             <y>62</y>
+             <width>128</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="dateTime">
+            <datetime>
+             <hour>0</hour>
+             <minute>0</minute>
+             <second>0</second>
+             <year>2009</year>
+             <month>1</month>
+             <day>1</day>
+            </datetime>
+           </property>
+           <property name="displayFormat">
+            <string>dd/MM/yyyy</string>
+           </property>
+           <property name="calendarPopup">
+            <bool>true</bool>
+           </property>
+           <property name="timeSpec">
+            <enum>Qt::LocalTime</enum>
+           </property>
+           <property name="date">
+            <date>
+             <year>2009</year>
+             <month>1</month>
+             <day>1</day>
+            </date>
+           </property>
+          </widget>
+          <widget class="QDateEdit" name="data_do">
+           <property name="geometry">
+            <rect>
+             <x>69</x>
+             <y>96</y>
+             <width>128</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="dateTime">
+            <datetime>
+             <hour>0</hour>
+             <minute>0</minute>
+             <second>0</second>
+             <year>2009</year>
+             <month>1</month>
+             <day>1</day>
+            </datetime>
+           </property>
+           <property name="displayFormat">
+            <string>dd/MM/yyyy</string>
+           </property>
+           <property name="calendarPopup">
+            <bool>true</bool>
+           </property>
+           <property name="timeSpec">
+            <enum>Qt::LocalTime</enum>
+           </property>
+           <property name="date">
+            <date>
+             <year>2009</year>
+             <month>1</month>
+             <day>1</day>
+            </date>
+           </property>
+          </widget>
+          <widget class="QLabel" name="kwota_lab">
+           <property name="geometry">
+            <rect>
+             <x>283</x>
+             <y>37</y>
+             <width>52</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Kwota:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="kwota_do_lab">
+           <property name="geometry">
+            <rect>
+             <x>284</x>
+             <y>96</y>
+             <width>20</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Do</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="kwota_od_lab">
+           <property name="geometry">
+            <rect>
+             <x>283</x>
+             <y>62</y>
+             <width>21</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Od</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="kwota_od">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>62</y>
+             <width>163</width>
+             <height>26</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="kwota_do">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>96</y>
+             <width>163</width>
+             <height>26</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="data_zastosuj">
+           <property name="geometry">
+            <rect>
+             <x>69</x>
+             <y>130</y>
+             <width>85</width>
+             <height>29</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Zastosuj</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="kwota_zastosuj">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>130</y>
+             <width>85</width>
+             <height>29</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Zastosuj</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="3">
+         <widget class="QTableView" name="faktury_tab_view"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="dodaj_fakture_btn">
+          <property name="text">
+           <string>Dodaj</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QPushButton" name="aktualizuj_fakture_btn">
+          <property name="text">
+           <string>Aktualizuj</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QPushButton" name="usun_fakture_btn">
+          <property name="text">
+           <string>Usuń</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Klienci">
+       <attribute name="title">
+        <string>Klienci</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0" colspan="3">
+         <widget class="QTableView" name="klienci_tab_view"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="dodaj_klienta_btn">
+          <property name="text">
+           <string>Dodaj</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="aktualizuj_klienta_btn">
+          <property name="text">
+           <string>Aktualizuj</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="usun_klienta_btn">
+          <property name="text">
+           <string>Usuń</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Towary">
+       <attribute name="title">
+        <string>Towary</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0" colspan="3">
+         <widget class="QTableView" name="towary_tab_view"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="dodaj_towar_btn">
+          <property name="text">
+           <string>Dodaj</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="aktualizuj_towar_btn">
+          <property name="text">
+           <string>Aktualizuj</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="usun_towar_btn">
+          <property name="text">
+           <string>Usuń</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Uslugi">
+       <attribute name="title">
+        <string>Usługi</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0" colspan="3">
+         <widget class="QTableView" name="uslugi_tab_view"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="dodaj_usluge_btn">
+          <property name="text">
+           <string>Dodaj</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="aktualizuj_usluge_btn">
+          <property name="text">
+           <string>Aktualizuj</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="usun_usluge_btn">
+          <property name="text">
+           <string>Usuń</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>764</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Plik">
+    <property name="title">
+     <string>&amp;Plik</string>
+    </property>
+    <addaction name="action_Dane_firmy"/>
+    <addaction name="action_Koniec"/>
+   </widget>
+   <widget class="QMenu" name="menuFaktury">
+    <property name="title">
+     <string>Faktury</string>
+    </property>
+    <addaction name="actionDodaj_faktur"/>
+    <addaction name="actionUsu_faktur"/>
+    <addaction name="actionAktualizuj_faktur"/>
+   </widget>
+   <widget class="QMenu" name="menuKlienci">
+    <property name="title">
+     <string>Klienci</string>
+    </property>
+    <addaction name="actionDodaj_klienta"/>
+    <addaction name="actionUsu_klienta"/>
+    <addaction name="actionAktualizuj_klienta"/>
+   </widget>
+   <widget class="QMenu" name="menuTowary">
+    <property name="title">
+     <string>Towary</string>
+    </property>
+    <addaction name="actionDodaj_towar"/>
+    <addaction name="actionUsu_towar"/>
+    <addaction name="actionAktualizuj_towar"/>
+   </widget>
+   <widget class="QMenu" name="menuUslugi">
+    <property name="title">
+     <string>Usługi</string>
+    </property>
+    <addaction name="actionDodaj_usluge"/>
+    <addaction name="actionUsu_usluge"/>
+    <addaction name="actionAktualizuj_usluge"/>
+   </widget>
+   <addaction name="menu_Plik"/>
+   <addaction name="menuFaktury"/>
+   <addaction name="menuKlienci"/>
+   <addaction name="menuTowary"/>
+   <addaction name="menuUslugi"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Koniec">
+   <property name="text">
+    <string>&amp;Koniec</string>
+   </property>
+  </action>
+  <action name="action_Dane_firmy">
+   <property name="text">
+    <string>&amp;Dane firmy</string>
+   </property>
+  </action>
+  <action name="actionDodaj_faktur">
+   <property name="text">
+    <string>Dodaj fakturę</string>
+   </property>
+  </action>
+  <action name="actionUsu_faktur">
+   <property name="text">
+    <string>Usuń fakturę</string>
+   </property>
+  </action>
+  <action name="actionAktualizuj_faktur">
+   <property name="text">
+    <string>Aktualizuj fakturę</string>
+   </property>
+  </action>
+  <action name="actionDodaj_klienta">
+   <property name="text">
+    <string>Dodaj klienta</string>
+   </property>
+  </action>
+  <action name="actionUsu_klienta">
+   <property name="text">
+    <string>Usuń klienta</string>
+   </property>
+  </action>
+  <action name="actionAktualizuj_klienta">
+   <property name="text">
+    <string>Aktualizuj klienta</string>
+   </property>
+  </action>
+  <action name="actionDodaj_towar">
+   <property name="text">
+    <string>Dodaj towar</string>
+   </property>
+  </action>
+  <action name="actionUsu_towar">
+   <property name="text">
+    <string>Usuń towar</string>
+   </property>
+  </action>
+  <action name="actionAktualizuj_towar">
+   <property name="text">
+    <string>Aktualizuj towar</string>
+   </property>
+  </action>
+  <action name="actionDodaj_usluge">
+   <property name="text">
+    <string>Dodaj usługę</string>
+   </property>
+  </action>
+  <action name="actionUsu_usluge">
+   <property name="text">
+    <string>Usuń usługę</string>
+   </property>
+  </action>
+  <action name="actionAktualizuj_usluge">
+   <property name="text">
+    <string>Aktualizuj usługę</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

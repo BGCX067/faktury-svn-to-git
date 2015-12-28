@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dane_Firmy</class>
+ <widget class="QDialog" name="Dane_Firmy">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>330</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>500</width>
+    <height>330</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>500</width>
+    <height>330</height>
+   </size>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Dane firmy</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>ikonki/16x16/dane_firmy.png</normaloff>ikonki/16x16/dane_firmy.png</iconset>
+  </property>
+  <widget class="QLineEdit" name="imie_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>10</y>
+     <width>371</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="nazwisko_lineedit">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>40</y>
+     <width>371</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="nazwa_firmy_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>70</y>
+     <width>371</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="adres_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>100</y>
+     <width>371</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="nip_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>130</y>
+     <width>371</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="regon_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>160</y>
+     <width>371</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="nr_konta_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>190</y>
+     <width>371</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="imie_label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>20</y>
+     <width>73</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Imię</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nazwisko_label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>50</y>
+     <width>81</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Nazwisko</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nazwa_firmy_label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>80</y>
+     <width>101</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Nazwa firmy</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="adres_label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>110</y>
+     <width>121</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Adres</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nip_label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>140</y>
+     <width>73</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>NIP</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="regon_label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>170</y>
+     <width>73</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Regon</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nr_konta_label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>200</y>
+     <width>81</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Nr konta</string>
+   </property>
+  </widget>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>290</y>
+     <width>189</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="logo_label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>260</y>
+     <width>73</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Logo</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="logo_toolButton">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>250</y>
+     <width>31</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>31</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>31</width>
+     <height>27</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="logo_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>250</y>
+     <width>341</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="telefon_kontaktowy_label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>230</y>
+     <width>151</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Tel kontaktowy</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="telefon_kontaktowy_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>220</y>
+     <width>371</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>imie_lineEdit</tabstop>
+  <tabstop>nazwisko_lineedit</tabstop>
+  <tabstop>nazwa_firmy_lineEdit</tabstop>
+  <tabstop>adres_lineEdit</tabstop>
+  <tabstop>nip_lineEdit</tabstop>
+  <tabstop>regon_lineEdit</tabstop>
+  <tabstop>nr_konta_lineEdit</tabstop>
+  <tabstop>telefon_kontaktowy_lineEdit</tabstop>
+  <tabstop>logo_lineEdit</tabstop>
+  <tabstop>logo_toolButton</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
